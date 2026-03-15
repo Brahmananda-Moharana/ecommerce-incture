@@ -1,0 +1,782 @@
+2026-03-15T19:15:34.622+05:30  INFO 19484 --- [eCommerce] [main] c.i.eCommerce.ECommerceApplication       : Starting ECommerceApplication using Java 21.0.8 with PID 19484 (C:\Users\mbrah\Downloads\eCommerce (1)\eCommerce\target\classes started by mbrah in C:\Users\mbrah\Downloads\eCommerce (1)\eCommerce)
+2026-03-15T19:15:34.625+05:30 DEBUG 19484 --- [eCommerce] [main] c.i.eCommerce.ECommerceApplication       : Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-03-15T19:15:34.625+05:30  INFO 19484 --- [eCommerce] [main] c.i.eCommerce.ECommerceApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-03-15T19:15:35.432+05:30  INFO 19484 --- [eCommerce] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-15T19:15:35.487+05:30  INFO 19484 --- [eCommerce] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 4 JPA repository interfaces.
+2026-03-15T19:15:36.048+05:30  INFO 19484 --- [eCommerce] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-03-15T19:15:36.062+05:30  INFO 19484 --- [eCommerce] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-15T19:15:36.062+05:30  INFO 19484 --- [eCommerce] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-15T19:15:36.124+05:30  INFO 19484 --- [eCommerce] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1443 ms
+2026-03-15T19:15:36.305+05:30  INFO 19484 --- [eCommerce] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-15T19:15:36.379+05:30  INFO 19484 --- [eCommerce] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-03-15T19:15:36.845+05:30  INFO 19484 --- [eCommerce] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-15T19:15:36.888+05:30  INFO 19484 --- [eCommerce] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-15T19:15:37.556+05:30  INFO 19484 --- [eCommerce] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1d5048d1
+2026-03-15T19:15:37.557+05:30  INFO 19484 --- [eCommerce] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-15T19:15:37.614+05:30  WARN 19484 --- [eCommerce] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-15T19:15:37.630+05:30  INFO 19484 --- [eCommerce] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/ecommerce_db?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: ecommerce_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-15T19:15:38.607+05:30  INFO 19484 --- [eCommerce] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-15T19:15:39.192+05:30  INFO 19484 --- [eCommerce] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-15T19:15:39.258+05:30  INFO 19484 --- [eCommerce] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-15T19:15:39.455+05:30 DEBUG 19484 --- [eCommerce] [main] com.incture.eCommerce.filter.JwtFilter   : Filter 'jwtFilter' configured for use
+2026-03-15T19:15:39.637+05:30  WARN 19484 --- [eCommerce] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-15T19:15:39.713+05:30  INFO 19484 --- [eCommerce] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-03-15T19:15:40.182+05:30  INFO 19484 --- [eCommerce] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-03-15T19:15:40.188+05:30  INFO 19484 --- [eCommerce] [main] c.i.eCommerce.ECommerceApplication       : Started ECommerceApplication in 6.028 seconds (process running for 6.509)
+2026-03-15T19:31:48.903+05:30  INFO 19484 --- [eCommerce] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-15T19:31:48.904+05:30  INFO 19484 --- [eCommerce] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-15T19:31:48.906+05:30  INFO 19484 --- [eCommerce] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-03-15T19:31:49.230+05:30  INFO 19484 --- [eCommerce] [http-nio-8080-exec-2] c.incture.eCommerce.service.UserService  : Registering new user with email: brahma@gmail.com
+2026-03-15T19:31:50.006+05:30  INFO 19484 --- [eCommerce] [http-nio-8080-exec-2] c.incture.eCommerce.service.UserService  : User registered successfully with id: 1
+2026-03-15T19:31:50.012+05:30 DEBUG 19484 --- [eCommerce] [http-nio-8080-exec-2] c.incture.eCommerce.service.UserService  : Cart created for user id: 1
+2026-03-15T19:32:26.890+05:30  INFO 19484 --- [eCommerce] [http-nio-8080-exec-3] c.incture.eCommerce.service.UserService  : Registering new user with email: admin@gmail.com
+2026-03-15T19:32:26.968+05:30  INFO 19484 --- [eCommerce] [http-nio-8080-exec-3] c.incture.eCommerce.service.UserService  : User registered successfully with id: 2
+2026-03-15T19:32:56.059+05:30  INFO 19484 --- [eCommerce] [http-nio-8080-exec-4] c.incture.eCommerce.service.UserService  : Registering new user with email: customer@gmail.com
+2026-03-15T19:32:56.134+05:30  INFO 19484 --- [eCommerce] [http-nio-8080-exec-4] c.incture.eCommerce.service.UserService  : User registered successfully with id: 3
+2026-03-15T19:32:56.136+05:30 DEBUG 19484 --- [eCommerce] [http-nio-8080-exec-4] c.incture.eCommerce.service.UserService  : Cart created for user id: 3
+2026-03-15T19:33:06.111+05:30  INFO 19484 --- [eCommerce] [http-nio-8080-exec-5] c.incture.eCommerce.service.UserService  : Login attempt for email: admin@gmail.com
+2026-03-15T19:33:06.285+05:30  INFO 19484 --- [eCommerce] [http-nio-8080-exec-5] c.incture.eCommerce.service.UserService  : Authentication successful for email: admin@gmail.com
+2026-03-15T19:33:31.299+05:30 ERROR 19484 --- [eCommerce] [http-nio-8080-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2026-03-12T11:04:25Z. Current time: 2026-03-15T14:03:31Z, a difference of 269946298 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:427) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at com.incture.eCommerce.util.JwtUtil.extractAllClaims(JwtUtil.java:48) ~[classes/:na]
+	at com.incture.eCommerce.util.JwtUtil.extractUsername(JwtUtil.java:42) ~[classes/:na]
+	at com.incture.eCommerce.filter.JwtFilter.doFilterInternal(JwtFilter.java:40) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317) ~[spring-security-config-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2026-03-15T19:33:35.795+05:30  INFO 19484 --- [eCommerce] [http-nio-8080-exec-7] c.incture.eCommerce.service.UserService  : Fetching user with id: 1
+2026-03-15T19:33:41.197+05:30  INFO 19484 --- [eCommerce] [http-nio-8080-exec-8] c.incture.eCommerce.service.UserService  : Fetching user with id: 2
+2026-03-15T19:33:45.040+05:30  INFO 19484 --- [eCommerce] [http-nio-8080-exec-10] c.incture.eCommerce.service.UserService  : Fetching user with id: 3
+2026-03-15T19:33:48.546+05:30  INFO 19484 --- [eCommerce] [http-nio-8080-exec-9] c.incture.eCommerce.service.UserService  : Fetching user with id: 4
+2026-03-15T19:33:48.551+05:30 ERROR 19484 --- [eCommerce] [http-nio-8080-exec-9] c.incture.eCommerce.service.UserService  : User not found or inactive with id: 4
+2026-03-15T19:34:03.008+05:30  INFO 19484 --- [eCommerce] [http-nio-8080-exec-1] c.incture.eCommerce.service.UserService  : Login attempt for email: customer@gmail.com
+2026-03-15T19:34:03.092+05:30  INFO 19484 --- [eCommerce] [http-nio-8080-exec-1] c.incture.eCommerce.service.UserService  : Authentication successful for email: customer@gmail.com
+2026-03-15T19:34:15.902+05:30  WARN 19484 --- [eCommerce] [http-nio-8080-exec-2] c.i.eCommerce.controller.UserController  : Unauthorized access attempt by user 3 for user id 1
+2026-03-15T19:34:20.091+05:30  WARN 19484 --- [eCommerce] [http-nio-8080-exec-3] c.i.eCommerce.controller.UserController  : Unauthorized access attempt by user 3 for user id 2
+2026-03-15T19:34:23.825+05:30  INFO 19484 --- [eCommerce] [http-nio-8080-exec-4] c.incture.eCommerce.service.UserService  : Fetching user with id: 3
+2026-03-15T19:35:37.010+05:30 ERROR 19484 --- [eCommerce] [http-nio-8080-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2026-03-12T11:05:49Z. Current time: 2026-03-15T14:05:37Z, a difference of 269988010 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:427) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at com.incture.eCommerce.util.JwtUtil.extractAllClaims(JwtUtil.java:48) ~[classes/:na]
+	at com.incture.eCommerce.util.JwtUtil.extractUsername(JwtUtil.java:42) ~[classes/:na]
+	at com.incture.eCommerce.filter.JwtFilter.doFilterInternal(JwtFilter.java:40) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317) ~[spring-security-config-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2026-03-15T19:37:54.170+05:30  WARN 19484 --- [eCommerce] [http-nio-8080-exec-9] c.i.eCommerce.controller.UserController  : Unauthorized update attempt by user 3 for user id 4
+2026-03-15T19:38:24.280+05:30  WARN 19484 --- [eCommerce] [http-nio-8080-exec-1] c.i.eCommerce.controller.UserController  : Unauthorized update attempt by user 3 for user id 1
+2026-03-15T19:38:30.273+05:30  INFO 19484 --- [eCommerce] [http-nio-8080-exec-2] c.incture.eCommerce.service.UserService  : Updating user with id: 3
+2026-03-15T19:38:30.274+05:30  INFO 19484 --- [eCommerce] [http-nio-8080-exec-2] c.incture.eCommerce.service.UserService  : Fetching user with id: 3
+2026-03-15T19:38:30.279+05:30  INFO 19484 --- [eCommerce] [http-nio-8080-exec-2] c.incture.eCommerce.service.UserService  : User updated successfully with id: 3
+2026-03-15T19:39:12.147+05:30  INFO 19484 --- [eCommerce] [http-nio-8080-exec-3] c.incture.eCommerce.service.UserService  : Login attempt for email: admin@gmail.com
+2026-03-15T19:39:12.226+05:30  INFO 19484 --- [eCommerce] [http-nio-8080-exec-3] c.incture.eCommerce.service.UserService  : Authentication successful for email: admin@gmail.com
+2026-03-15T19:39:28.794+05:30  WARN 19484 --- [eCommerce] [http-nio-8080-exec-4] c.i.eCommerce.controller.UserController  : Unauthorized update attempt by user 2 for user id 3
+2026-03-15T19:39:36.208+05:30  WARN 19484 --- [eCommerce] [http-nio-8080-exec-5] c.i.eCommerce.controller.UserController  : Unauthorized update attempt by user 2 for user id 1
+2026-03-15T19:39:56.589+05:30  INFO 19484 --- [eCommerce] [http-nio-8080-exec-6] c.incture.eCommerce.service.UserService  : Registering new user with email: temp@gmail.com
+2026-03-15T19:39:56.667+05:30  INFO 19484 --- [eCommerce] [http-nio-8080-exec-6] c.incture.eCommerce.service.UserService  : User registered successfully with id: 4
+2026-03-15T19:39:56.669+05:30 DEBUG 19484 --- [eCommerce] [http-nio-8080-exec-6] c.incture.eCommerce.service.UserService  : Cart created for user id: 4
+2026-03-15T19:40:21.850+05:30  INFO 19484 --- [eCommerce] [http-nio-8080-exec-1] c.incture.eCommerce.service.UserService  : Registering new user with email: temp@gmail.com
+2026-03-15T19:40:21.853+05:30 ERROR 19484 --- [eCommerce] [http-nio-8080-exec-1] c.incture.eCommerce.service.UserService  : Registration failed. Email already in use: temp@gmail.com
+2026-03-15T19:40:44.753+05:30  INFO 19484 --- [eCommerce] [http-nio-8080-exec-2] c.incture.eCommerce.service.UserService  : Login attempt for email: customer@gmail.com
+2026-03-15T19:40:44.826+05:30  INFO 19484 --- [eCommerce] [http-nio-8080-exec-2] c.incture.eCommerce.service.UserService  : Authentication successful for email: customer@gmail.com
+2026-03-15T19:42:42.229+05:30  INFO 19484 --- [eCommerce] [http-nio-8080-exec-7] c.incture.eCommerce.service.UserService  : Login attempt for email: admin@gmail.com
+2026-03-15T19:42:42.300+05:30  INFO 19484 --- [eCommerce] [http-nio-8080-exec-7] c.incture.eCommerce.service.UserService  : Authentication successful for email: admin@gmail.com
+2026-03-15T19:43:04.661+05:30  WARN 19484 --- [eCommerce] [http-nio-8080-exec-8] c.incture.eCommerce.service.UserService  : Deleting user with id: 4
+2026-03-15T19:43:04.661+05:30  INFO 19484 --- [eCommerce] [http-nio-8080-exec-8] c.incture.eCommerce.service.UserService  : Fetching user with id: 4
+2026-03-15T19:43:04.731+05:30 DEBUG 19484 --- [eCommerce] [http-nio-8080-exec-8] c.incture.eCommerce.service.UserService  : Cart deleted for user id: 4
+2026-03-15T19:43:04.734+05:30  INFO 19484 --- [eCommerce] [http-nio-8080-exec-8] c.incture.eCommerce.service.UserService  : User soft deleted successfully with id: 4
+2026-03-15T19:48:17.521+05:30  INFO 19484 --- [eCommerce] [http-nio-8080-exec-2] c.incture.eCommerce.service.UserService  : Login attempt for email: customer@gmail.com
+2026-03-15T19:48:17.599+05:30  INFO 19484 --- [eCommerce] [http-nio-8080-exec-2] c.incture.eCommerce.service.UserService  : Authentication successful for email: customer@gmail.com
+2026-03-15T19:48:46.025+05:30  INFO 19484 --- [eCommerce] [http-nio-8080-exec-4] c.incture.eCommerce.service.UserService  : Login attempt for email: admin@gmail.com
+2026-03-15T19:48:46.104+05:30  INFO 19484 --- [eCommerce] [http-nio-8080-exec-4] c.incture.eCommerce.service.UserService  : Authentication successful for email: admin@gmail.com
+2026-03-15T19:51:46.205+05:30  INFO 19484 --- [eCommerce] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-15T19:51:46.211+05:30  INFO 19484 --- [eCommerce] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-15T19:51:46.215+05:30  INFO 19484 --- [eCommerce] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-15T19:51:46.218+05:30  INFO 19484 --- [eCommerce] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-15T19:51:46.222+05:30  INFO 19484 --- [eCommerce] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-15T19:51:49.410+05:30  INFO 1904 --- [eCommerce] [main] c.i.eCommerce.ECommerceApplication       : Starting ECommerceApplication using Java 21.0.8 with PID 1904 (C:\Users\mbrah\Downloads\eCommerce (1)\eCommerce\target\classes started by mbrah in C:\Users\mbrah\Downloads\eCommerce (1)\eCommerce)
+2026-03-15T19:51:49.413+05:30 DEBUG 1904 --- [eCommerce] [main] c.i.eCommerce.ECommerceApplication       : Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-03-15T19:51:49.414+05:30  INFO 1904 --- [eCommerce] [main] c.i.eCommerce.ECommerceApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-03-15T19:51:50.164+05:30  INFO 1904 --- [eCommerce] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-15T19:51:50.226+05:30  INFO 1904 --- [eCommerce] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 4 JPA repository interfaces.
+2026-03-15T19:51:50.738+05:30  INFO 1904 --- [eCommerce] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-03-15T19:51:50.750+05:30  INFO 1904 --- [eCommerce] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-15T19:51:50.751+05:30  INFO 1904 --- [eCommerce] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-15T19:51:50.800+05:30  INFO 1904 --- [eCommerce] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1328 ms
+2026-03-15T19:51:50.923+05:30  INFO 1904 --- [eCommerce] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-15T19:51:50.986+05:30  INFO 1904 --- [eCommerce] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-03-15T19:51:51.420+05:30  INFO 1904 --- [eCommerce] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-15T19:51:51.442+05:30  INFO 1904 --- [eCommerce] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-15T19:51:51.716+05:30  INFO 1904 --- [eCommerce] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@35cbeb54
+2026-03-15T19:51:51.718+05:30  INFO 1904 --- [eCommerce] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-15T19:51:51.768+05:30  WARN 1904 --- [eCommerce] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-15T19:51:51.781+05:30  INFO 1904 --- [eCommerce] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/ecommerce_db?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: ecommerce_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-15T19:51:52.658+05:30  INFO 1904 --- [eCommerce] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-15T19:51:52.717+05:30  INFO 1904 --- [eCommerce] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-15T19:51:52.779+05:30  INFO 1904 --- [eCommerce] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-15T19:51:52.968+05:30 DEBUG 1904 --- [eCommerce] [main] com.incture.eCommerce.filter.JwtFilter   : Filter 'jwtFilter' configured for use
+2026-03-15T19:51:53.138+05:30  WARN 1904 --- [eCommerce] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-15T19:51:53.217+05:30  INFO 1904 --- [eCommerce] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-03-15T19:51:53.658+05:30  INFO 1904 --- [eCommerce] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-03-15T19:51:53.663+05:30  INFO 1904 --- [eCommerce] [main] c.i.eCommerce.ECommerceApplication       : Started ECommerceApplication in 4.694 seconds (process running for 5.085)
+2026-03-15T19:52:10.286+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-15T19:52:10.286+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-15T19:52:10.288+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-03-15T19:52:10.535+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-2] c.incture.eCommerce.service.UserService  : Login attempt for email: admin@gmail.com
+2026-03-15T19:52:11.296+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-2] c.incture.eCommerce.service.UserService  : Authentication successful for email: admin@gmail.com
+2026-03-15T19:52:22.654+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-3] c.i.eCommerce.service.ProductService     : Creating new product with name: iPhone 15
+2026-03-15T19:52:22.732+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-3] c.i.eCommerce.service.ProductService     : Product created successfully with id: 1
+2026-03-15T19:53:25.719+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-7] c.i.eCommerce.service.ProductService     : Creating new product with name: Samsung Galaxy S23
+2026-03-15T19:53:25.727+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-7] c.i.eCommerce.service.ProductService     : Product created successfully with id: 2
+2026-03-15T19:53:35.230+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-9] c.i.eCommerce.service.ProductService     : Creating new product with name: Dell Inspiron 15
+2026-03-15T19:53:35.240+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-9] c.i.eCommerce.service.ProductService     : Product created successfully with id: 3
+2026-03-15T19:53:49.865+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-10] c.i.eCommerce.service.ProductService     : Creating new product with name: Sony WH-1000XM5
+2026-03-15T19:53:49.874+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-10] c.i.eCommerce.service.ProductService     : Product created successfully with id: 4
+2026-03-15T19:53:56.965+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-1] c.i.eCommerce.service.ProductService     : Creating new product with name: Logitech MX Master 3S
+2026-03-15T19:53:56.976+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-1] c.i.eCommerce.service.ProductService     : Product created successfully with id: 5
+2026-03-15T19:54:08.433+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-2] c.i.eCommerce.service.ProductService     : Fetching products page=0, size=2, category=null, sortBy=id
+2026-03-15T19:54:08.508+05:30  WARN 1904 --- [eCommerce] [http-nio-8080-exec-2] ration$PageModule$WarningLoggingModifier : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-03-15T19:54:41.116+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-3] c.i.eCommerce.service.ProductService     : Fetching products page=0, size=2, category=null, sortBy=price
+2026-03-15T19:55:04.327+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-4] c.i.eCommerce.service.ProductService     : Fetching products page=0, size=5, category=null, sortBy=price
+2026-03-15T19:55:22.618+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-5] c.i.eCommerce.service.ProductService     : Fetching product with id: 4
+2026-03-15T19:55:59.505+05:30 ERROR 1904 --- [eCommerce] [http-nio-8080-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2026-03-12T13:30:15Z. Current time: 2026-03-15T14:25:59Z, a difference of 262544502 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:427) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at com.incture.eCommerce.util.JwtUtil.extractAllClaims(JwtUtil.java:48) ~[classes/:na]
+	at com.incture.eCommerce.util.JwtUtil.extractUsername(JwtUtil.java:42) ~[classes/:na]
+	at com.incture.eCommerce.filter.JwtFilter.doFilterInternal(JwtFilter.java:40) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317) ~[spring-security-config-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2026-03-15T19:56:26.764+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-8] c.incture.eCommerce.service.UserService  : Login attempt for email: customer@gmail.com
+2026-03-15T19:56:26.844+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-8] c.incture.eCommerce.service.UserService  : Authentication successful for email: customer@gmail.com
+2026-03-15T20:02:57.548+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-1] c.incture.eCommerce.service.UserService  : Login attempt for email: customer@gmail.com
+2026-03-15T20:02:57.625+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-1] c.incture.eCommerce.service.UserService  : Authentication successful for email: customer@gmail.com
+2026-03-15T20:03:14.396+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-3] c.incture.eCommerce.service.UserService  : Login attempt for email: admin@gmail.com
+2026-03-15T20:03:14.480+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-3] c.incture.eCommerce.service.UserService  : Authentication successful for email: admin@gmail.com
+2026-03-15T20:04:21.979+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-6] c.i.eCommerce.service.ProductService     : Fetching product with id: 3
+2026-03-15T20:05:09.571+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-8] c.i.eCommerce.service.ProductService     : Updating product with id: 3
+2026-03-15T20:05:09.571+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-8] c.i.eCommerce.service.ProductService     : Fetching product with id: 3
+2026-03-15T20:05:09.600+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-8] c.i.eCommerce.service.ProductService     : Product updated successfully with id: 3
+2026-03-15T20:05:30.859+05:30 ERROR 1904 --- [eCommerce] [http-nio-8080-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2026-03-12T13:30:15Z. Current time: 2026-03-15T14:35:30Z, a difference of 263115858 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:427) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at com.incture.eCommerce.util.JwtUtil.extractAllClaims(JwtUtil.java:48) ~[classes/:na]
+	at com.incture.eCommerce.util.JwtUtil.extractUsername(JwtUtil.java:42) ~[classes/:na]
+	at com.incture.eCommerce.filter.JwtFilter.doFilterInternal(JwtFilter.java:40) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317) ~[spring-security-config-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2026-03-15T20:05:44.220+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-9] c.incture.eCommerce.service.UserService  : Login attempt for email: customer@gmail.com
+2026-03-15T20:05:44.292+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-9] c.incture.eCommerce.service.UserService  : Authentication successful for email: customer@gmail.com
+2026-03-15T20:06:09.055+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-1] c.incture.eCommerce.service.UserService  : Login attempt for email: admin@gmail.com
+2026-03-15T20:06:09.124+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-1] c.incture.eCommerce.service.UserService  : Authentication successful for email: admin@gmail.com
+2026-03-15T20:06:16.606+05:30  WARN 1904 --- [eCommerce] [http-nio-8080-exec-2] c.i.eCommerce.service.ProductService     : Deleting product with id: 5
+2026-03-15T20:06:16.606+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-2] c.i.eCommerce.service.ProductService     : Fetching product with id: 5
+2026-03-15T20:06:16.618+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-2] c.i.eCommerce.service.ProductService     : Product soft deleted with id: 5
+2026-03-15T20:07:09.429+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-3] c.incture.eCommerce.service.CartService  : Adding product to cart: userId=2, productId=1, quantity=2
+2026-03-15T20:07:09.430+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-3] c.incture.eCommerce.service.CartService  : Fetching cart for userId=2
+2026-03-15T20:07:09.441+05:30 ERROR 1904 --- [eCommerce] [http-nio-8080-exec-3] c.incture.eCommerce.service.CartService  : Cart not found for userId=2
+2026-03-15T20:10:39.022+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-6] c.incture.eCommerce.service.UserService  : Login attempt for email: brahma@gmail.com
+2026-03-15T20:10:39.096+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-6] c.incture.eCommerce.service.UserService  : Authentication successful for email: brahma@gmail.com
+2026-03-15T20:10:56.007+05:30 ERROR 1904 --- [eCommerce] [http-nio-8080-exec-8] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2026-03-12T17:16:36Z. Current time: 2026-03-15T14:40:56Z, a difference of 249860005 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:427) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at com.incture.eCommerce.util.JwtUtil.extractAllClaims(JwtUtil.java:48) ~[classes/:na]
+	at com.incture.eCommerce.util.JwtUtil.extractUsername(JwtUtil.java:42) ~[classes/:na]
+	at com.incture.eCommerce.filter.JwtFilter.doFilterInternal(JwtFilter.java:40) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317) ~[spring-security-config-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2026-03-15T20:11:05.658+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-7] c.incture.eCommerce.service.CartService  : Updating cart item quantity: userId=1, productId=1, quantity=7
+2026-03-15T20:11:05.659+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-7] c.incture.eCommerce.service.CartService  : Fetching cart for userId=1
+2026-03-15T20:11:05.683+05:30 ERROR 1904 --- [eCommerce] [http-nio-8080-exec-7] c.incture.eCommerce.service.CartService  : Product not found in cart. productId=1
+2026-03-15T20:11:13.810+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-10] c.incture.eCommerce.service.CartService  : Updating cart item quantity: userId=1, productId=1, quantity=1
+2026-03-15T20:11:13.811+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-10] c.incture.eCommerce.service.CartService  : Fetching cart for userId=1
+2026-03-15T20:11:13.822+05:30 ERROR 1904 --- [eCommerce] [http-nio-8080-exec-10] c.incture.eCommerce.service.CartService  : Product not found in cart. productId=1
+2026-03-15T20:11:19.390+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-2] c.incture.eCommerce.service.CartService  : Updating cart item quantity: userId=1, productId=1, quantity=2
+2026-03-15T20:11:19.390+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-2] c.incture.eCommerce.service.CartService  : Fetching cart for userId=1
+2026-03-15T20:11:19.402+05:30 ERROR 1904 --- [eCommerce] [http-nio-8080-exec-2] c.incture.eCommerce.service.CartService  : Product not found in cart. productId=1
+2026-03-15T20:11:30.078+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-4] c.incture.eCommerce.service.CartService  : Adding product to cart: userId=1, productId=1, quantity=2
+2026-03-15T20:11:30.079+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-4] c.incture.eCommerce.service.CartService  : Fetching cart for userId=1
+2026-03-15T20:11:30.085+05:30 DEBUG 1904 --- [eCommerce] [http-nio-8080-exec-4] c.incture.eCommerce.service.CartService  : New product added to cart. productId=1
+2026-03-15T20:11:30.090+05:30 DEBUG 1904 --- [eCommerce] [http-nio-8080-exec-4] c.incture.eCommerce.service.CartService  : Cart total recalculated. cartId=1, totalPrice=159998.0
+2026-03-15T20:11:43.059+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-5] c.incture.eCommerce.service.CartService  : Adding product to cart: userId=1, productId=3, quantity=2
+2026-03-15T20:11:43.059+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-5] c.incture.eCommerce.service.CartService  : Fetching cart for userId=1
+2026-03-15T20:11:43.065+05:30 ERROR 1904 --- [eCommerce] [http-nio-8080-exec-5] c.incture.eCommerce.service.CartService  : Attempt to add inactive product to cart. productId=3
+2026-03-15T20:11:49.183+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-6] c.incture.eCommerce.service.CartService  : Adding product to cart: userId=1, productId=5, quantity=2
+2026-03-15T20:11:49.183+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-6] c.incture.eCommerce.service.CartService  : Fetching cart for userId=1
+2026-03-15T20:11:49.190+05:30 ERROR 1904 --- [eCommerce] [http-nio-8080-exec-6] c.incture.eCommerce.service.CartService  : Attempt to add inactive product to cart. productId=5
+2026-03-15T20:12:43.321+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-8] c.i.eCommerce.service.ProductService     : Updating product with id: 5
+2026-03-15T20:12:43.321+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-8] c.i.eCommerce.service.ProductService     : Fetching product with id: 5
+2026-03-15T20:12:43.333+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-8] c.i.eCommerce.service.ProductService     : Product updated successfully with id: 5
+2026-03-15T20:13:00.691+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-7] c.incture.eCommerce.service.CartService  : Adding product to cart: userId=1, productId=5, quantity=2
+2026-03-15T20:13:00.691+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-7] c.incture.eCommerce.service.CartService  : Fetching cart for userId=1
+2026-03-15T20:13:00.704+05:30 DEBUG 1904 --- [eCommerce] [http-nio-8080-exec-7] c.incture.eCommerce.service.CartService  : New product added to cart. productId=5
+2026-03-15T20:13:00.704+05:30 DEBUG 1904 --- [eCommerce] [http-nio-8080-exec-7] c.incture.eCommerce.service.CartService  : Cart total recalculated. cartId=1, totalPrice=289998.0
+2026-03-15T20:13:51.585+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-9] c.incture.eCommerce.service.CartService  : Updating cart item quantity: userId=1, productId=5, quantity=1
+2026-03-15T20:13:51.585+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-9] c.incture.eCommerce.service.CartService  : Fetching cart for userId=1
+2026-03-15T20:13:51.596+05:30 DEBUG 1904 --- [eCommerce] [http-nio-8080-exec-9] c.incture.eCommerce.service.CartService  : Cart item quantity updated. productId=5, newQuantity=1
+2026-03-15T20:13:51.596+05:30 DEBUG 1904 --- [eCommerce] [http-nio-8080-exec-9] c.incture.eCommerce.service.CartService  : Cart total recalculated. cartId=1, totalPrice=224998.0
+2026-03-15T20:14:17.852+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-10] c.incture.eCommerce.service.CartService  : Fetching cart for userId=1
+2026-03-15T20:14:17.852+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-10] c.incture.eCommerce.service.CartService  : Fetching cart for userId=1
+2026-03-15T20:14:34.275+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-1] c.incture.eCommerce.service.CartService  : Removing product from cart: userId=1, productId=1
+2026-03-15T20:14:34.275+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-1] c.incture.eCommerce.service.CartService  : Fetching cart for userId=1
+2026-03-15T20:14:34.280+05:30 DEBUG 1904 --- [eCommerce] [http-nio-8080-exec-1] c.incture.eCommerce.service.CartService  : Cart total recalculated. cartId=1, totalPrice=65000.0
+2026-03-15T20:14:44.852+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-2] c.incture.eCommerce.service.CartService  : Removing product from cart: userId=1, productId=5
+2026-03-15T20:14:44.853+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-2] c.incture.eCommerce.service.CartService  : Fetching cart for userId=1
+2026-03-15T20:14:44.857+05:30 DEBUG 1904 --- [eCommerce] [http-nio-8080-exec-2] c.incture.eCommerce.service.CartService  : Cart total recalculated. cartId=1, totalPrice=0.0
+2026-03-15T20:14:52.513+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-3] c.incture.eCommerce.service.CartService  : Adding product to cart: userId=1, productId=5, quantity=2
+2026-03-15T20:14:52.513+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-3] c.incture.eCommerce.service.CartService  : Fetching cart for userId=1
+2026-03-15T20:14:52.520+05:30 DEBUG 1904 --- [eCommerce] [http-nio-8080-exec-3] c.incture.eCommerce.service.CartService  : New product added to cart. productId=5
+2026-03-15T20:14:52.521+05:30 DEBUG 1904 --- [eCommerce] [http-nio-8080-exec-3] c.incture.eCommerce.service.CartService  : Cart total recalculated. cartId=1, totalPrice=130000.0
+2026-03-15T20:15:00.435+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-4] c.incture.eCommerce.service.CartService  : Adding product to cart: userId=1, productId=1, quantity=2
+2026-03-15T20:15:00.435+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-4] c.incture.eCommerce.service.CartService  : Fetching cart for userId=1
+2026-03-15T20:15:00.443+05:30 DEBUG 1904 --- [eCommerce] [http-nio-8080-exec-4] c.incture.eCommerce.service.CartService  : New product added to cart. productId=1
+2026-03-15T20:15:00.443+05:30 DEBUG 1904 --- [eCommerce] [http-nio-8080-exec-4] c.incture.eCommerce.service.CartService  : Cart total recalculated. cartId=1, totalPrice=289998.0
+2026-03-15T20:15:09.608+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-5] c.incture.eCommerce.service.CartService  : Updating cart item quantity: userId=1, productId=5, quantity=1
+2026-03-15T20:15:09.608+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-5] c.incture.eCommerce.service.CartService  : Fetching cart for userId=1
+2026-03-15T20:15:09.618+05:30 DEBUG 1904 --- [eCommerce] [http-nio-8080-exec-5] c.incture.eCommerce.service.CartService  : Cart item quantity updated. productId=5, newQuantity=1
+2026-03-15T20:15:09.618+05:30 DEBUG 1904 --- [eCommerce] [http-nio-8080-exec-5] c.incture.eCommerce.service.CartService  : Cart total recalculated. cartId=1, totalPrice=224998.0
+2026-03-15T20:15:18.182+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-6] c.incture.eCommerce.service.CartService  : Removing product from cart: userId=1, productId=3
+2026-03-15T20:15:18.182+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-6] c.incture.eCommerce.service.CartService  : Fetching cart for userId=1
+2026-03-15T20:15:22.464+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-8] c.incture.eCommerce.service.CartService  : Removing product from cart: userId=1, productId=9
+2026-03-15T20:15:22.464+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-8] c.incture.eCommerce.service.CartService  : Fetching cart for userId=1
+2026-03-15T20:15:25.866+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-7] c.incture.eCommerce.service.CartService  : Fetching cart for userId=1
+2026-03-15T20:15:25.866+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-7] c.incture.eCommerce.service.CartService  : Fetching cart for userId=1
+2026-03-15T20:15:46.123+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-9] c.incture.eCommerce.service.UserService  : Login attempt for email: admin@gmail.com
+2026-03-15T20:15:46.190+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-9] c.incture.eCommerce.service.UserService  : Authentication successful for email: admin@gmail.com
+2026-03-15T20:16:10.649+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-10] c.i.eCommerce.service.ProductService     : Updating product with id: 5
+2026-03-15T20:16:10.649+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-10] c.i.eCommerce.service.ProductService     : Fetching product with id: 5
+2026-03-15T20:16:10.659+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-10] c.i.eCommerce.service.ProductService     : Product updated successfully with id: 5
+2026-03-15T20:16:27.814+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-1] c.incture.eCommerce.service.CartService  : Fetching cart for userId=1
+2026-03-15T20:16:27.814+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-1] c.incture.eCommerce.service.CartService  : Fetching cart for userId=1
+2026-03-15T20:16:42.075+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-2] c.incture.eCommerce.service.CartService  : Updating cart item quantity: userId=1, productId=5, quantity=2
+2026-03-15T20:16:42.075+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-2] c.incture.eCommerce.service.CartService  : Fetching cart for userId=1
+2026-03-15T20:16:42.084+05:30 ERROR 1904 --- [eCommerce] [http-nio-8080-exec-2] c.incture.eCommerce.service.CartService  : Attempt to add inactive product to cart. productId=5
+2026-03-15T20:16:50.632+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-3] c.incture.eCommerce.service.CartService  : Fetching cart for userId=1
+2026-03-15T20:16:50.632+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-3] c.incture.eCommerce.service.CartService  : Fetching cart for userId=1
+2026-03-15T20:17:01.959+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-4] c.i.eCommerce.service.OrderService       : Checkout initiated for userId=2
+2026-03-15T20:17:01.969+05:30 ERROR 1904 --- [eCommerce] [http-nio-8080-exec-4] c.i.eCommerce.service.OrderService       : Cart not found. userId=2
+2026-03-15T20:17:19.407+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-5] c.i.eCommerce.service.OrderService       : Checkout initiated for userId=2
+2026-03-15T20:17:19.410+05:30 ERROR 1904 --- [eCommerce] [http-nio-8080-exec-5] c.i.eCommerce.service.OrderService       : Cart not found. userId=2
+2026-03-15T20:17:31.134+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-6] c.incture.eCommerce.service.UserService  : Login attempt for email: brahma@gmail.com
+2026-03-15T20:17:31.200+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-6] c.incture.eCommerce.service.UserService  : Authentication successful for email: brahma@gmail.com
+2026-03-15T20:17:38.898+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-8] c.i.eCommerce.service.OrderService       : Checkout initiated for userId=1
+2026-03-15T20:17:38.903+05:30  WARN 1904 --- [eCommerce] [http-nio-8080-exec-8] c.i.eCommerce.service.OrderService       : Product out of stock during checkout. productId=5, requestedQty=1
+2026-03-15T20:18:21.081+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-7] c.incture.eCommerce.service.CartService  : Updating cart item quantity: userId=1, productId=5, quantity=0
+2026-03-15T20:18:21.081+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-7] c.incture.eCommerce.service.CartService  : Fetching cart for userId=1
+2026-03-15T20:18:21.087+05:30 ERROR 1904 --- [eCommerce] [http-nio-8080-exec-7] c.incture.eCommerce.service.CartService  : Attempt to add inactive product to cart. productId=5
+2026-03-15T20:18:27.024+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-9] c.incture.eCommerce.service.CartService  : Updating cart item quantity: userId=1, productId=5, quantity=0
+2026-03-15T20:18:27.024+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-9] c.incture.eCommerce.service.CartService  : Fetching cart for userId=1
+2026-03-15T20:18:27.031+05:30 ERROR 1904 --- [eCommerce] [http-nio-8080-exec-9] c.incture.eCommerce.service.CartService  : Attempt to add inactive product to cart. productId=5
+2026-03-15T20:20:13.073+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-2] c.incture.eCommerce.service.CartService  : Updating cart item quantity: userId=1, productId=5, quantity=0
+2026-03-15T20:20:13.073+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-2] c.incture.eCommerce.service.CartService  : Fetching cart for userId=1
+2026-03-15T20:20:13.080+05:30 ERROR 1904 --- [eCommerce] [http-nio-8080-exec-2] c.incture.eCommerce.service.CartService  : Attempt to add inactive product to cart. productId=5
+2026-03-15T20:22:38.672+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-5] c.incture.eCommerce.service.CartService  : Removing product from cart: userId=1, productId=5
+2026-03-15T20:22:38.672+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-5] c.incture.eCommerce.service.CartService  : Fetching cart for userId=1
+2026-03-15T20:22:38.677+05:30 DEBUG 1904 --- [eCommerce] [http-nio-8080-exec-5] c.incture.eCommerce.service.CartService  : Cart total recalculated. cartId=1, totalPrice=159998.0
+2026-03-15T20:22:46.589+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-6] c.i.eCommerce.service.OrderService       : Checkout initiated for userId=1
+2026-03-15T20:22:46.605+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-6] c.i.eCommerce.service.OrderService       : Order created successfully. orderId=1, userId=1
+2026-03-15T20:22:46.605+05:30 DEBUG 1904 --- [eCommerce] [http-nio-8080-exec-6] c.i.eCommerce.service.OrderService       : Cart cleared after successful checkout. userId=1
+2026-03-15T20:22:46.605+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-6] c.i.eCommerce.service.OrderService       : Payment successful. userId=1
+2026-03-15T20:23:08.942+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-8] c.i.eCommerce.service.OrderService       : Fetching orders for userId=1
+2026-03-15T20:23:15.784+05:30 ERROR 1904 --- [eCommerce] [http-nio-8080-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2026-03-12T18:44:29Z. Current time: 2026-03-15T14:53:15Z, a difference of 245326784 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:427) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at com.incture.eCommerce.util.JwtUtil.extractAllClaims(JwtUtil.java:48) ~[classes/:na]
+	at com.incture.eCommerce.util.JwtUtil.extractUsername(JwtUtil.java:42) ~[classes/:na]
+	at com.incture.eCommerce.filter.JwtFilter.doFilterInternal(JwtFilter.java:40) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317) ~[spring-security-config-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2026-03-15T20:23:20.380+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-9] c.i.eCommerce.service.OrderService       : Fetching order by id=1
+2026-03-15T20:23:30.378+05:30 ERROR 1904 --- [eCommerce] [http-nio-8080-exec-10] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2026-03-12T18:47:20Z. Current time: 2026-03-15T14:53:30Z, a difference of 245170378 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:427) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at com.incture.eCommerce.util.JwtUtil.extractAllClaims(JwtUtil.java:48) ~[classes/:na]
+	at com.incture.eCommerce.util.JwtUtil.extractUsername(JwtUtil.java:42) ~[classes/:na]
+	at com.incture.eCommerce.filter.JwtFilter.doFilterInternal(JwtFilter.java:40) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317) ~[spring-security-config-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2026-03-15T20:24:48.511+05:30 ERROR 1904 --- [eCommerce] [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2026-03-12T18:47:20Z. Current time: 2026-03-15T14:54:48Z, a difference of 245248511 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:427) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at com.incture.eCommerce.util.JwtUtil.extractAllClaims(JwtUtil.java:48) ~[classes/:na]
+	at com.incture.eCommerce.util.JwtUtil.extractUsername(JwtUtil.java:42) ~[classes/:na]
+	at com.incture.eCommerce.filter.JwtFilter.doFilterInternal(JwtFilter.java:40) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317) ~[spring-security-config-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2026-03-15T20:24:58.758+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-4] c.incture.eCommerce.service.UserService  : Login attempt for email: admin@gmail.com
+2026-03-15T20:24:58.824+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-4] c.incture.eCommerce.service.UserService  : Authentication successful for email: admin@gmail.com
+2026-03-15T20:25:10.522+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-5] c.i.eCommerce.service.OrderService       : Updating order status. orderId=1, newStatus=SHIPPED
+2026-03-15T20:25:10.525+05:30  INFO 1904 --- [eCommerce] [http-nio-8080-exec-5] c.i.eCommerce.service.OrderService       : Order status updated successfully. orderId=1, status=SHIPPED
+2026-03-15T21:30:12.953+05:30  WARN 1904 --- [eCommerce] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m49s581ms784µs600ns).
