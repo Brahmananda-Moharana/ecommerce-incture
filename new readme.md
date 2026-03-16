@@ -344,6 +344,184 @@ Authentication Flow:
 |  - order_items                                                          |
 +-------------------------------------------------------------------------+
 ```
+# Running the Project Locally
+
+This guide explains how to run the **ecommerce-incture** backend project on your local machine.
+
+---
+
+# Prerequisites
+
+Make sure the following tools are installed on your system:
+
+* **Java 17+**
+* **Maven 3.8+**
+* **Git**
+* **Postman or any API testing tool**
+* **MySQL / PostgreSQL** (depending on your database configuration)
+
+You can verify installations using:
+
+```bash
+java -version
+mvn -version
+git --version
+```
+
+---
+
+# 1. Clone the Repository
+
+Clone the project from GitHub.
+
+```bash
+git clone https://github.com/Brahmananda-Moharana/ecommerce-incture.git
+```
+
+Navigate into the project directory:
+
+```bash
+cd ecommerce-incture
+```
+
+---
+
+# 2. Configure Database
+
+Open the following file:
+
+```
+src/main/resources/application.properties
+```
+
+Update the database configuration according to your local setup.
+
+Example:
+
+```properties
+spring.datasource.url=jdbc:mysql://localhost:3306/ecommerce_db
+spring.datasource.username=root
+spring.datasource.password=yourpassword
+
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+```
+
+Create the database if it does not exist.
+
+Example (MySQL):
+
+```sql
+CREATE DATABASE ecommerce_db;
+```
+
+---
+
+# 3. Build the Project
+
+Run the following command to build the project:
+
+```bash
+mvn clean install
+```
+
+This will:
+
+* Download dependencies
+* Compile the project
+* Run tests
+* Package the application
+
+---
+
+# 4. Run the Application
+
+Start the Spring Boot application:
+
+```bash
+mvn spring-boot:run
+```
+
+Or run the generated jar:
+
+```bash
+java -jar target/ecommerce-incture.jar
+```
+
+---
+
+# 5. Verify Application
+
+The application will start on:
+
+```
+http://localhost:8080
+```
+
+Base API URL:
+
+```
+http://localhost:8080/api
+```
+
+---
+
+# 6. Test APIs
+
+You can test the APIs using **Postman** or **cURL**.
+
+Example request:
+
+```
+POST http://localhost:8080/api/users/register
+```
+
+---
+
+# Project Structure (Important Packages)
+
+```
+controller  → REST API endpoints
+service     → Business logic
+repository  → Database access (JPA)
+entity      → Database entities
+dto         → Request/Response models
+exception   → Custom exceptions
+filter      → JWT authentication filter
+config      → Spring Security configuration
+util        → Utility classes
+```
+
+---
+
+# Default Application Port
+
+If not configured, Spring Boot runs on:
+
+```
+http://localhost:8080
+```
+
+You can change the port in:
+
+```properties
+server.port=8081
+```
+
+---
+
+# Build Command Summary
+
+```bash
+git clone https://github.com/Brahmananda-Moharana/ecommerce-incture.git
+cd ecommerce-incture
+mvn clean install
+mvn spring-boot:run
+```
+
+---
+
+Your API server should now be running locally 🚀
 
 # E-Commerce Backend API
 
@@ -1148,185 +1326,6 @@ PUT /api/orders/2/status?status=SHIPPED
 | -------- | ------------------------------- |
 | CUSTOMER | Browse products and manage cart |
 | ADMIN    | Manage products and users       |
-
-# Running the Project Locally
-
-This guide explains how to run the **ecommerce-incture** backend project on your local machine.
-
----
-
-# Prerequisites
-
-Make sure the following tools are installed on your system:
-
-* **Java 17+**
-* **Maven 3.8+**
-* **Git**
-* **Postman or any API testing tool**
-* **MySQL / PostgreSQL** (depending on your database configuration)
-
-You can verify installations using:
-
-```bash
-java -version
-mvn -version
-git --version
-```
-
----
-
-# 1. Clone the Repository
-
-Clone the project from GitHub.
-
-```bash
-git clone https://github.com/Brahmananda-Moharana/ecommerce-incture.git
-```
-
-Navigate into the project directory:
-
-```bash
-cd ecommerce-incture
-```
-
----
-
-# 2. Configure Database
-
-Open the following file:
-
-```
-src/main/resources/application.properties
-```
-
-Update the database configuration according to your local setup.
-
-Example:
-
-```properties
-spring.datasource.url=jdbc:mysql://localhost:3306/ecommerce_db
-spring.datasource.username=root
-spring.datasource.password=yourpassword
-
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
-```
-
-Create the database if it does not exist.
-
-Example (MySQL):
-
-```sql
-CREATE DATABASE ecommerce_db;
-```
-
----
-
-# 3. Build the Project
-
-Run the following command to build the project:
-
-```bash
-mvn clean install
-```
-
-This will:
-
-* Download dependencies
-* Compile the project
-* Run tests
-* Package the application
-
----
-
-# 4. Run the Application
-
-Start the Spring Boot application:
-
-```bash
-mvn spring-boot:run
-```
-
-Or run the generated jar:
-
-```bash
-java -jar target/ecommerce-incture.jar
-```
-
----
-
-# 5. Verify Application
-
-The application will start on:
-
-```
-http://localhost:8080
-```
-
-Base API URL:
-
-```
-http://localhost:8080/api
-```
-
----
-
-# 6. Test APIs
-
-You can test the APIs using **Postman** or **cURL**.
-
-Example request:
-
-```
-POST http://localhost:8080/api/users/register
-```
-
----
-
-# Project Structure (Important Packages)
-
-```
-controller  → REST API endpoints
-service     → Business logic
-repository  → Database access (JPA)
-entity      → Database entities
-dto         → Request/Response models
-exception   → Custom exceptions
-filter      → JWT authentication filter
-config      → Spring Security configuration
-util        → Utility classes
-```
-
----
-
-# Default Application Port
-
-If not configured, Spring Boot runs on:
-
-```
-http://localhost:8080
-```
-
-You can change the port in:
-
-```properties
-server.port=8081
-```
-
----
-
-# Build Command Summary
-
-```bash
-git clone https://github.com/<your-username>/ecommerce-incture.git
-cd ecommerce-incture
-mvn clean install
-mvn spring-boot:run
-```
-
----
-
-Your API server should now be running locally 🚀
 
 # Database Schema
 
