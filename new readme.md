@@ -1,9 +1,9 @@
 ## Table of Contents
 
-* [1. Project Title](#1-project-title)
-* [2. Project Overview](#2-project-overview)
+* [Project Title](#project-title)
+* [Project Overview](#project-overview)
     * [Key Capabilities](#key-capabilities)
-* [3. Tech Stack](#3-tech-stack)
+* [Tech Stack](#tech-stack)
     * [Backend](#backend)
     * [Database](#database)
     * [Authentication](#authentication)
@@ -11,7 +11,7 @@
     * [Validation](#validation)
     * [Testing](#testing)
     * [Build Tool](#build-tool)
-* [4. Project Architecture](#4-project-architecture)
+* [Project Architecture](#project-architecture)
     * [Package Structure](#package-structure)
     * [Controller Layer](#controller-layer)
     * [Service Layer](#service-layer)
@@ -20,6 +20,14 @@
     * [DTO Layer](#dto-layer)
     * [Security Layer](#security-layer)
     * [Request Flow Architecture](#request-flow-architecture)
+* [Running the Project Locally](#running-the-project-locally)
+    * [Prerequisites](#prerequisites)
+    * [1. Clone the Repository](#1-clone-the-repository)
+    * [2. Configure Database](#2-configure-database)
+    * [3. Build the Project](#3-build-the-project)
+    * [4. Run the Application](#4-run-the-application)
+    * [5. Verify Application](#5-verify-application)
+    * [6. Test APIs](#6-test-apis)
 * [Base URL](#base-url)
 * [Authentication](#authentication-1)
 * [API Access Control](#api-access-control)
@@ -50,14 +58,6 @@
     * [3. Get Order By ID](#3-get-order-by-id)
     * [4. Update Order Status (Admin Only)](#4-update-order-status-admin-only)
 * [Roles](#roles)
-* [Running the Project Locally](#running-the-project-locally)
-    * [Prerequisites](#prerequisites)
-    * [1. Clone the Repository](#1-clone-the-repository)
-    * [2. Configure Database](#2-configure-database)
-    * [3. Build the Project](#3-build-the-project)
-    * [4. Run the Application](#4-run-the-application)
-    * [5. Verify Application](#5-verify-application)
-    * [6. Test APIs](#6-test-apis)
 * [Project Structure (Important Packages)](#project-structure-important-packages)
 * [Default Application Port](#default-application-port)
 * [Build Command Summary](#build-command-summary)
@@ -65,7 +65,7 @@
 * [Database Diagram](#database-diagram)
 # E-Commerce Backend API – Spring Boot
 
-# 1. Project Title
+# Project Title
 
 **E-Commerce Backend API – Spring Boot**
 
@@ -73,7 +73,7 @@ A RESTful backend application that powers an e-commerce platform. The system han
 
 ---
 
-# 2. Project Overview
+# Project Overview
 
 This project is a **Spring Boot–based backend service for an e-commerce platform** that provides REST APIs for managing products, shopping carts, and orders.
 
@@ -93,7 +93,7 @@ The system is designed to mimic a **real-world e-commerce backend architecture**
 
 ---
 
-# 3. Tech Stack
+# Tech Stack
 
 ## Backend
 
@@ -132,7 +132,7 @@ The system is designed to mimic a **real-world e-commerce backend architecture**
 
 ---
 
-# 4. Project Architecture
+# Project Architecture
 
 The project follows a **layered N-tier architecture**, which separates responsibilities into independent modules to improve maintainability, scalability, and testability.
 
