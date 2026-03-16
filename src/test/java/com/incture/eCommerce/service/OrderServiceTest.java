@@ -38,6 +38,9 @@ public class OrderServiceTest {
     @Mock
     private UserRepository userRepository;
 
+    @Mock
+    private EmailService emailService;
+
     @Spy
     @InjectMocks
     private OrderService orderService;
@@ -107,6 +110,7 @@ public class OrderServiceTest {
             assertTrue(mockCart.getItems().isEmpty());
             assertEquals(0.0, mockCart.getTotalPrice());
             verify(cartRepository, times(1)).save(mockCart);
+            verify(emailService, times(1)).sendOrderConfirmation(eq(mockUser.getEmail()), any(OrderResponse.class));
         }
     }
 

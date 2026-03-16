@@ -26,6 +26,7 @@ public class OrderService {
     private final OrderRepository orderRepository;
     private final CartRepository cartRepository;
     private final UserRepository userRepository;
+    private final EmailService emailService;
 
 
     /**
@@ -114,6 +115,13 @@ public class OrderService {
             cartRepository.save(cart);
 
             log.info("Payment successful. userId={}", userId);
+
+            OrderResponse finalResponse = mapToOrderResponse(order);
+            // Send the email notification!
+            emailService.sendOrderConfirmation(user.getEmail(), finalResponse);
+
+
+            return finalResponse;
         }
 
         return mapToOrderResponse(order);
