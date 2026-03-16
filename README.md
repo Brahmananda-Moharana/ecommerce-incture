@@ -86,6 +86,7 @@ The application follows a **clean N-tier architecture** where responsibilities a
 * Product management with stock tracking and soft deletion
 * Shopping cart management with automatic price calculation
 * Order placement with simulated payment processing
+* Email notification sent to the user when an order is placed successfully
 * Comprehensive exception handling and logging
 * Unit testing of service-layer business logic
 
@@ -115,6 +116,7 @@ The system is designed to mimic a **real-world e-commerce backend architecture**
 
 * **Lombok**
 * **SLF4J / Logback Logging**
+* **Spring Mail (JavaMailSender) for email notifications**
 
 ## Validation
 
@@ -194,6 +196,7 @@ Responsibilities:
 * Manage transactions using `@Transactional`
 * Perform validations and authorization checks
 * Communicate with repositories
+* Trigger email notifications after successful order placement
 
 Example Services:
 
@@ -201,6 +204,7 @@ Example Services:
 * `ProductService`
 * `CartService`
 * `OrderService`
+* `EmailService`
 
 ---
 
@@ -315,10 +319,11 @@ Authentication Flow:
 |                          SERVICE LAYER                                  |
 |  [ OrderService, CartService, UserService ]                             |
 |  - Executes business logic                                              |
-|  - Simulates payment processing                                        |
-|  - Updates product stock                                               |
-|  - Handles cart management                                             |
-|  - Throws custom exceptions if rules fail                              |
+|  - Simulates payment processing                                         |
+|  - Updates product stock                                                |
+|  - Handles cart management                                              |
+|  - Throws custom exceptions if rules fail                               |
+|  - Sends order confirmation email to the user                           |
 +-------------------------------------------------------------------------+
                               |
                               | 4. Data Access
